@@ -1,0 +1,267 @@
+{
+    "global": {
+        "name": "Jerome Depotter",
+        "position": "Software Engineer",
+        "avatar": "./files/jdepotter.jpeg"
+    },
+    "links": {
+        "linkedin": "https://www.linkedin.com/in/jerome-depotter/",
+        "github": "https://github.com/jdepotter",
+        "resume": "/files/jdepotter.pdf"
+    },
+    "menu_items": [
+        {
+            "title": "Home",
+            "icon": "home",
+            "scrollTo": {
+                "el": "#p-home"
+            },
+            "scrollToMobile": {
+                "el": "#p-home",
+                "offset": -48
+            }
+        },
+        {
+            "title": "Aboute Me",
+            "icon": "user",
+            "scrollTo": {
+                "el": "#p-about"
+            },
+            "scrollToMobile": {
+                "el": "#p-about",
+                "offset": -48
+            }
+        },
+        {
+            "title": "Experience",
+            "icon": "laptop-code",
+            "scrollTo": {
+                "el": "#p-resume"
+            },
+            "scrollToMobile": {
+                "el": "#p-resume",
+                "offset": -48
+            }
+        },
+        {
+            "title": "Projects",
+            "icon": "folder-open",
+            "scrollTo": {
+                "el": "#p-projects"
+            },
+            "scrollToMobile": {
+                "el": "#p-projects",
+                "offset": -48
+            }
+        },
+        {
+            "title": "Skills",
+            "icon": "cogs",
+            "scrollTo": {
+                "el": "#p-skills"
+            },
+            "scrollToMobile": {
+                "el": "#p-skills",
+                "offset": -48
+            }
+        }
+    ],
+    "cards": {
+        "about": "About Me",
+        "experience": "Experience",
+        "projects": "Projects",
+        "skills": "Skills"
+    },
+    "home": {
+        "header": "Hi,",
+        "paragraphs": [
+            "I am Jerome Depotter. I am a Senior Software Engineer offering more than 7 years in the full software and website development lifecycle. I have worked in different domains: oil and gas services, telecommunications, healthcare software.",
+            "I am a polyglotte software engineer able to play with various languages such as C#, Python or JavaScript. I am always motivated to improve my skills and learn new technologies.",
+            "I have good abilities to understand customer needs in order to release the best product. I am known for having excellent troubleshooting skills and be able to analyze code to quickly resolve issues and propose cost-effective and responsive solutions."
+        ]
+    },
+    "about": {
+        "info_left": [
+            {
+                "title": "Birthday",
+                "value": "22 November, 1988"
+            },
+            {
+                "title": "Location",
+                "value": "Los Angeles, USA"
+            },
+            {
+                "title": "Nationality",
+                "value": "France"
+            },
+            {
+                "title": "Languages",
+                "value": "French, English"
+            }
+        ],
+        "info_right": [
+            {
+                "title": "Education",
+                "items": [
+                    {
+                        "header": "Master Degree in Computer Science (2012)",
+                        "details": "Institut Nationale des Sciences Appliquees de Lyon, France"
+                    },
+                    {
+                        "header": "Bachelor Degree in Software and Firmware Science (2009)",
+                        "details": "University Paul Sabatier, Toulouse, France"
+                    }
+                ]
+            }
+        ],
+        "btn_resume": "Get My Resume"
+    },
+    "resume": {
+        "items": [
+            {
+                "opposite": "Nov 2015 - Present",
+                "header_2": "Transplant Connect (Los Angeles)",
+                "header_1": "Full-Stack Software Engineer",
+                "header_3": "C#, ASP.NET MVC 5 and Webform, SQL Server, REST API, HTML, CSS, jQuery, Node.js, Vue.js, Python",
+                "details": [
+                    "Work on iTransplant, a web Donation and Transplantation Platform used by Organ Transplantation Agencies in the US, Canada and Australia",
+                    "Software Engineer front and back end on iTransplant. Working in a team of 15 developers",
+                    "Design and implement new features on iTransplant such as new pages, new components and API interfaces",
+                    "Participate to estimation meetings and deployment of new releases using Bitbucket, Bamboo and Octopus",
+                    "Work on several other projects to improve code quality and develop tools used by the team"
+                ]
+            },
+            {
+                "opposite": "Jan 2019 - Jun 2020",
+                "header_2": "Schlumberger (Remote)",
+                "header_1": "Senior Software Engineer",
+                "header_3": "Node.js, Vue.js, Python, Protobuf, ZMQ Socket, Web Socket, PostgresSQL, Postgis, Docker, Arcgis",
+                "details": [
+                    "Work on a research project to supervise an autonomous subsea robot used to inspect subsea petroleum assets",
+                    "Develop front and back end of a web app used to supervise communications with a wireless subsea robot",
+                    "Develop front and back end of a web app used to visualize and positioned in a 3D map, subsea equipments and the robot"
+                ]
+            },
+            {
+                "opposite": "Nov 2015 - Nov 2016",
+                "header_2": "Insensi (New York)",
+                "header_1": "Embedded Software Engineer",
+                "header_3": "C, C++, WebRTC",
+                "details": [
+                    "Work on the firmware of a smart home phone based on Android",
+                    "Design and program in C and C++ the integration of a Bluetooth handset",
+                    "Work on the improvement of VP8 video decoding using hardware decoding"
+                ]
+            },
+            {
+                "opposite": "Jan 2013 - Nov 2015",
+                "header_2": "Schlumberger (Paris)",
+                "header_1": "Software Engineer",
+                "header_3": "C#, WPF, SQL",
+                "details": [
+                    "Software engineer on a flagship project for Donwhole Testing. This project brings real time communication between surface and downhole tools using acoustic telemetry. It permits to save time and millions of dollars during reservoir characterization",
+                    "Design and develop in C# and WPF the monitoring and acquisition software used at the surface",
+                    "Define new functionalities to improve the software and enable teams on the field to deliver the best services to the final client",
+                    "Provide a reactive and efficient support for teams on the field"
+                ]
+            },
+            {
+                "opposite": "Apr 2012 - Sep 2012",
+                "header_2": "Thales (Paris)",
+                "header_1": "Software Engineer Trainee",
+                "header_3": "C++, C#, WPF",
+                "details": [
+                    "Design and program in C++ a countermeasure system for a military aircraft simulator",
+                    "Design and program in C# and WPF, on my proposal, a testing platform using Bing Map to place threats and Microsoft Flight Simulator to manage aircraft position"
+                ]
+            }
+        ]
+    },
+    "skills": {
+        "categories": [
+            {
+                "title": "Languages/Framework",
+                "items": [
+                    {
+                        "name": "C#",
+                        "score": 4
+                    },
+                    {
+                        "name": "Python",
+                        "score": 3.5
+                    },
+                    {
+                        "name": "Node.js",
+                        "score": 3.5
+                    },
+                    {
+                        "name": "Vue.js",
+                        "score": 3
+                    },
+                    {
+                        "name": "jQuery",
+                        "score": 3.5
+                    },
+                    {
+                        "name": "C++",
+                        "score": 3
+                    },
+                    {
+                        "name": "SQL",
+                        "score": 3
+                    },
+                    {
+                        "name": "HTML",
+                        "score": 3
+                    },
+                    {
+                        "name": "CSS",
+                        "score": 3
+                    },
+                    {
+                        "name": "ASP.NET",
+                        "score": 4
+                    }
+                ]
+            },
+            {
+                "title": "Technologies",
+                "items": [
+                    {
+                        "name": "REST API",
+                        "score": 4
+                    },
+                    {
+                        "name": "Web Socket",
+                        "score": 3.5
+                    },
+                    {
+                        "name": "Docker",
+                        "score": 2.5
+                    },
+                    {
+                        "name": "AWS",
+                        "score": 2
+                    }
+                ]
+            },
+            {
+                "title": "Databases",
+                "items": [
+                    {
+                        "name": "SQL Server",
+                        "score": 3
+                    },
+                    {
+                        "name": "PostgresSQL",
+                        "score": 3
+                    },
+                    {
+                        "name": "MongoDB",
+                        "score": 2
+                    }
+                ]
+            }
+        ]
+    }
+}

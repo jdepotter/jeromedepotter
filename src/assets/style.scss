@@ -1,6 +1,11 @@
 #p-navigation {
     margin-left: 5%;
     margin-top: 60px;
+
+    .p-link-icon {
+        padding-top:10px;
+        padding-bottom:0px
+    }
 }
 
 .p-content {
@@ -62,13 +67,17 @@
 
         .p-col-1 {
             h4 {
-                width: 100px;
-            }
+                width: 120px;
+            } 
         }
 
         .p-col-2 {
             h4 {
                 width: 100px;
+            }
+
+            li {
+                margin-bottom: 5px;
             }
         }
 

@@ -1,131 +1,70 @@
 <template>
   <v-app>
-    <v-app-bar dense flat v-show="$vuetify.breakpoint.mobile" fixed dark> 
-        <v-menu offset-y dark>
-          <template v-slot:activator="{ on }">
-            <v-app-bar-nav-icon v-on="on"></v-app-bar-nav-icon>
-          </template>
-          <v-list>
-            <v-list-item-group>
-              <v-list-item v-scroll-to="{el: '#p-home', offset: -48}">
-                <v-list-item-icon>
-                  <font-awesome-icon icon="home" size="1x" />
-                </v-list-item-icon>
-                <v-list-item-content>
-                  <v-list-item-title>Home</v-list-item-title>
-                </v-list-item-content>
-              </v-list-item>
-              <v-list-item v-scroll-to="{el: '#p-about', offset: -48}">
-                <v-list-item-icon>
-                  <font-awesome-icon icon="user" size="1x" />
-                </v-list-item-icon>
-                <v-list-item-content>
-                  <v-list-item-title>About Me</v-list-item-title>
-                </v-list-item-content>
-              </v-list-item>
-              <v-list-item v-scroll-to="{el: '#p-resume', offset: -48}">
-                <v-list-item-icon>
-                  <font-awesome-icon icon="laptop-code" size="1x" />
-                </v-list-item-icon>
-                <v-list-item-content>
-                  <v-list-item-title>Resume</v-list-item-title>
-                </v-list-item-content>
-              </v-list-item>
-              <v-list-item v-scroll-to="{el: '#p-projects', offset: -48}">
-                <v-list-item-icon>
-                  <font-awesome-icon icon="folder-open" size="1x" />
-                </v-list-item-icon>
-                <v-list-item-content>
-                  <v-list-item-title>Projects</v-list-item-title>
-                </v-list-item-content>
-              </v-list-item>
-              <v-list-item v-scroll-to="{el: '#p-skills', offset: -48}">
-                <v-list-item-icon>
-                  <font-awesome-icon icon="cogs" size="1x" />
-                </v-list-item-icon>
-                <v-list-item-content>
-                  <v-list-item-title>Skills</v-list-item-title>
-                </v-list-item-content>
-              </v-list-item>
-            </v-list-item-group>
-          </v-list>
-        </v-menu>
-        <v-spacer></v-spacer>
-        <font-awesome-icon :icon="['fab', 'linkedin-in']" size="lg" class="p-brand" @click="openLinkedin()" style="margin-right: 25px"/>
-        <font-awesome-icon :icon="['fab', 'github']" size="lg" class="p-brand" @click="openGithub()" style="margin-right: 25px"/>
-        <font-awesome-icon :icon="['fa', 'file-download']" size="lg" class="p-brand" @click="downloadResume()" style="margin-right: 10px"/>
+    <v-app-bar dense flat v-show="$vuetify.breakpoint.mobile" fixed dark>
+      <v-menu offset-y dark>
+        <template v-slot:activator="{ on }">
+          <v-app-bar-nav-icon v-on="on"></v-app-bar-nav-icon>
+        </template>
+        <v-list>
+          <v-list-item-group>
+            <v-list-item v-for="(item, i) in menu_items" :key="i" v-scroll-to="item.scrollToMobile">
+              <v-list-item-icon>
+                <font-awesome-icon :icon="item.icon" size="1x" />
+              </v-list-item-icon>
+              <v-list-item-content>
+                <v-list-item-title>{{item.title}}</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list-item-group>
+        </v-list>
+      </v-menu>
+      <v-spacer></v-spacer>
+      <font-awesome-icon v-for="(link, i) in links_model" :key="i"
+        :icon="link.icon"
+        size="lg"
+        class="p-brand"
+        @click="(windowOpen(link.target))"
+        style="margin-left: 25px"
+      />
     </v-app-bar>
-    <v-layout>   
+    <v-layout>
       <v-card dark class="rounded-lg">
         <v-navigation-drawer id="p-navigation" fixed left height="450" width="200">
           <v-list dense>
             <v-list-item>
               <v-list-item-avatar>
-                <img src="./assets/jdepotter.jpeg" />
+                <img :src="global.avatar" />
               </v-list-item-avatar>
             </v-list-item>
             <v-list-item two-line>
               <v-list-item-content>
-                <v-list-item-title>Jerome Depotter</v-list-item-title>
-                <v-list-item-subtitle>Software Engineer</v-list-item-subtitle>
+                <v-list-item-title>{{global.name}}</v-list-item-title>
+                <v-list-item-subtitle>{{global.position}}</v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
             <v-divider></v-divider>
           </v-list>
           <v-list>
             <v-list-item-group>
-              <v-list-item v-scroll-to="'#p-home'">
+              <v-list-item v-for="(item, i) in menu_items" :key="i" v-scroll-to="item.scrollTo">
                 <v-list-item-icon>
-                  <font-awesome-icon icon="home" size="1x" />
+                  <font-awesome-icon :icon="item.icon" size="1x" />
                 </v-list-item-icon>
                 <v-list-item-content>
-                  <v-list-item-title>Home</v-list-item-title>
-                </v-list-item-content>
-              </v-list-item>
-              <v-list-item v-scroll-to="'#p-about'">
-                <v-list-item-icon>
-                  <font-awesome-icon icon="user" size="1x" />
-                </v-list-item-icon>
-                <v-list-item-content>
-                  <v-list-item-title>About Me</v-list-item-title>
-                </v-list-item-content>
-              </v-list-item>
-              <v-list-item v-scroll-to="'#p-resume'">
-                <v-list-item-icon>
-                  <font-awesome-icon icon="laptop-code" size="1x" />
-                </v-list-item-icon>
-                <v-list-item-content>
-                  <v-list-item-title>Resume</v-list-item-title>
-                </v-list-item-content>
-              </v-list-item>
-              <v-list-item v-scroll-to="'#p-projects'">
-                <v-list-item-icon>
-                  <font-awesome-icon icon="folder-open" size="1x" />
-                </v-list-item-icon>
-                <v-list-item-content>
-                  <v-list-item-title>Projects</v-list-item-title>
-                </v-list-item-content>
-              </v-list-item>
-              <v-list-item v-scroll-to="'#p-skills'">
-                <v-list-item-icon>
-                  <font-awesome-icon icon="cogs" size="1x" />
-                </v-list-item-icon>
-                <v-list-item-content>
-                  <v-list-item-title>Skills</v-list-item-title>
+                  <v-list-item-title>{{item.title}}</v-list-item-title>
                 </v-list-item-content>
               </v-list-item>
             </v-list-item-group>
           </v-list>
-          <v-container style="padding-top:10px; padding-bottom:0px">
+          <v-container class="p-link-icon">
             <v-row justify="center">
-              <v-col lg="3" md="3">
-                <font-awesome-icon :icon="['fab', 'linkedin-in']" size="lg" class="p-brand" @click="openLinkedin()"/>
-              </v-col>
-              <v-col lg="3" md="3">
-                <font-awesome-icon :icon="['fab', 'github']" size="lg" class="p-brand" @click="openGithub()"/>
-              </v-col>
-              <v-col lg="3" md="3">
-                <font-awesome-icon :icon="['fa', 'file-download']" size="lg" class="p-brand" @click="downloadResume()"/>
+              <v-col v-for="(link, i) in links_model" :key="i" lg="3" md="3">
+                <font-awesome-icon
+                  :icon="link.icon"
+                  size="lg"
+                  class="p-brand"
+                  @click="windowOpen(link.target)"
+                />
               </v-col>
             </v-row>
           </v-container>
@@ -138,24 +77,24 @@
           </v-card>
           <v-card id="p-about" class="p-card rounded-lg" light>
             <v-card-text>
-              <h2 class="p-card-title" :class="`grey--text text--darken-2`">About Me</h2>
+              <h2 class="p-card-title" :class="`grey--text text--darken-2`">{{cards.about}}</h2>
             </v-card-text>
             <About></About>
           </v-card>
           <v-card id="p-resume" class="p-card rounded-lg" light>
-            <v-card-text >
-              <h2 class="p-card-title" :class="`grey--text text--darken-2`">Resume</h2>
+            <v-card-text>
+              <h2 class="p-card-title" :class="`grey--text text--darken-2`">{{cards.experience}}</h2>
             </v-card-text>
-            <Resume ></Resume>
+            <Resume></Resume>
           </v-card>
           <v-card id="p-projects" class="p-card rounded-lg" light>
             <v-card-text>
-              <h2 class="p-card-title" :class="`grey--text text--darken-2`">Projects</h2>
+              <h2 class="p-card-title" :class="`grey--text text--darken-2`">{{cards.projects}}</h2>
             </v-card-text>
           </v-card>
           <v-card id="p-skills" class="p-card rounded-lg" light>
             <v-card-text>
-              <h2 class="p-card-title" :class="`grey--text text--darken-2`">Skills</h2>
+              <h2 class="p-card-title" :class="`grey--text text--darken-2`">{{cards.skills}}</h2>
               <Skills></Skills>
             </v-card-text>
           </v-card>
@@ -171,6 +110,8 @@ import Skills from "@/components/Skills";
 import Home from "@/components/Home";
 import About from "@/components/About";
 
+import siteConfig from "./assets/site-config";
+
 export default {
   name: "App",
   components: {
@@ -179,19 +120,44 @@ export default {
     Home,
     About,
   },
-  data: () => ({
-    //
+  data: () => ({     
   }),
+  computed: {
+    menu_items() {
+      return this.$store.getters.get_site_content.menu_items;
+    },
+    links() {
+      return this.$store.getters.get_site_content.links;
+    },
+    cards() {
+      return this.$store.getters.get_site_content.cards;
+    },
+    global() {
+      return this.$store.getters.get_site_content.global;
+    },
+    links_model() { 
+      return [
+      {
+        icon: ["fab", "linkedin-in"],
+        target: this.links.linkedin,
+      },
+      {
+        icon: ["fab", "github"],
+        target: this.links.github,
+      },
+      {
+        icon: ["fa", "file-download"],
+        target: this.links.resume,
+      },
+    ]},
+  },
+  beforeMount() {
+    this.$store.dispatch('SAVE_SITE_CONTENT', { site_content: siteConfig })
+  },
   methods: {
-    openLinkedin: function() {
-      window.open("https://www.linkedin.com/in/jerome-depotter/", "_blank")
+    windowOpen: function (target) {
+      window.open(target, "_blank");
     },
-    openGithub: function() {
-      window.open("https://github.com/jdepotter", "_blank")
-    },
-    downloadResume: function() {
-      window.open("/files/jdepotter.pdf", "_blank")
-    } 
-  }
+  },
 };
 </script>

@@ -5,37 +5,20 @@
         <v-row align="center">
           <v-col sm="4" cols="4">
             <v-avatar size="100" style="margin-bottom: 5px">
-              <img src="../assets/jdepotter.jpeg" />
+              <img :src="global.avatar" />
             </v-avatar>
           </v-col>
           <v-col sm="8" cols="8" v-show="$vuetify.breakpoint.mobile">
-            <h3 :class="`font-weight-bold grey--text text--darken-3`">Jerome Depotter</h3>
-            <h4 :class="`font-weight-light grey--text text--darken-3`">Software Engineer</h4>
+            <h3 :class="`font-weight-bold grey--text text--darken-3`">{{global.name}}</h3>
+            <h4 :class="`font-weight-light grey--text text--darken-3`">{{global.position}}</h4>
           </v-col>
         </v-row>
       </v-col>
       <v-col md="10" lg="10" sm="12" cols="12">
-        <h3>Hi,</h3>
-        <p>
-          I am Jerome Depotter. I am a Senior Software Engineer offering more than 7 years in the full software and website development lifecycle.
-          I have worked in different domains: oil and gas services, telecommunications, healthcare software.
+        <h3>{{home.header}}</h3>
+        <p v-for="(p, i) in home.paragraphs" :key="i">
+          {{p}}
         </p>
-        <p>I am a polyglotte software engineer able to play with various languages such as C#, Python or JavaScript. I am always motivated to improve my skills and learn new technologies.</p>
-        <p>
-          I have good abilities to understand customer needs in order to release the best product.
-          I am known for having excellent troubleshooting skills and be able to analyze code to quickly resolve issues and propose cost-effective and responsive solutions.
-        </p>
-        <!-- <p>
-          I have started my career at Schlumberger in France as a Software Engineer on a flagship project for Downhole Testing. 
-          I have designed and developped an acquitision software used to monitor the wireless communication between the surface and the downhole tools, and to interact with the tools themselves.
-        </p>
-        <p>
-          I, then, moved to New York to work at Insensi, a startup which made Ily a smart home phone based on Android.
-          I was responsible to design and develop the integration with a handset connected in Bluetooth and the improve video decoding on the phone.
-        </p>
-        <p>
-          I am currently working at Transplant Connect where I work on iTransplant, a web Donation and Transplantation Platform used by organ transplantation agencies in the US, Canada and Australia.
-        </p>-->
       </v-col>
     </v-row>
   </v-container>
@@ -46,6 +29,14 @@ export default {
   name: "Home",
   data() {
     return {};
+  },
+  computed: {
+    global() {
+      return this.$store.getters.get_site_content.global;
+    },
+    home() {
+      return this.$store.getters.get_site_content.home;
+    }
   },
 };
 </script>

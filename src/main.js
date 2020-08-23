@@ -6,8 +6,8 @@ import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fort
 
 import App from './App.vue'
 import router from './router'
-import store from './store'
 import vuetify from './plugins/vuetify';
+import { store } from './store/store';
 
 import {
   faHome,
