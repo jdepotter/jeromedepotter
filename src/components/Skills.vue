@@ -9,9 +9,10 @@
               <h3 class="p-skill-name">{{skill.name}}</h3>
               <v-rating
                 v-model="skill.score"
-                color="grey darken-2"
+                color="amber darken-1"
                 background-color="grey darken-1"
-                medium
+                :small="$vuetify.breakpoint.mobile"
+                :medium="!$vuetify.breakpoint.mobile"
                 half-increments
                 dense
               ></v-rating>
@@ -28,9 +29,10 @@
               <h3 class="p-skill-name">{{skill.name}}</h3>
               <v-rating
                 v-model="skill.score"
-                color="grey darken-2"
+                color="amber darken-1"
                 background-color="grey darken-1"
-                medium
+                :small="$vuetify.breakpoint.mobile"
+                :medium="!$vuetify.breakpoint.mobile"
                 half-increments
                 dense
               ></v-rating>
@@ -47,9 +49,10 @@
               <h3 class="p-skill-name">{{skill.name}}</h3>
               <v-rating
                 v-model="skill.score"
-                color="grey darken-2"
+                color="amber darken-1"
                 background-color="grey darken-1"
-                medium
+                :small="$vuetify.breakpoint.mobile"
+                :medium="!$vuetify.breakpoint.mobile"
                 half-increments
                 dense
               ></v-rating>

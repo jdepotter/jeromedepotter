@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-timeline class="p-timeline" v-show="!$vuetify.breakpoint.mobile">
-      <v-timeline-item v-for="(item, i) in items" :key="i" color="grey darken-2" small>
+      <v-timeline-item v-for="(item, i) in items" :key="i" color="amber darken-1" small>
         <template v-slot:opposite>
           <span :class="`font-weight-bold grey--text text--darken-3`" v-text="item.year"></span>
         </template>
@@ -16,7 +16,7 @@
       </v-timeline-item>
     </v-timeline>
     <v-timeline class="p-timeline" v-show="$vuetify.breakpoint.mobile" dense>
-        <v-timeline-item v-for="(item, i) in items" :key="i" color="grey darken-2" small>
+        <v-timeline-item v-for="(item, i) in items" :key="i" color="amber darken-1" small>
         <div class="py-4">
           <h4 :class="`font-weight-bold grey--text text--darken-3`" v-text="item.year"></h4>
           <h3 :class="`font-weight-light grey--text text--darken-3`" v-text="item.title"></h3>

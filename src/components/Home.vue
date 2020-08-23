@@ -2,9 +2,17 @@
   <v-container fluid class="p-home">
     <v-row>
       <v-col md="2" lg="2" sm="12" cols="12">
-        <v-avatar size="100" style="margin-bottom: 5px">
-          <img src="../assets/jdepotter.jpeg" />
-        </v-avatar>
+        <v-row align="center">
+          <v-col sm="4" cols="4">
+            <v-avatar size="100" style="margin-bottom: 5px">
+              <img src="../assets/jdepotter.jpeg" />
+            </v-avatar>
+          </v-col>
+          <v-col sm="8" cols="8" v-show="$vuetify.breakpoint.mobile">
+            <h3 :class="`font-weight-bold grey--text text--darken-3`">Jerome Depotter</h3>
+            <h4 :class="`font-weight-light grey--text text--darken-3`">Software Engineer</h4>
+          </v-col>
+        </v-row>
       </v-col>
       <v-col md="10" lg="10" sm="12" cols="12">
         <h3>Hi,</h3>
@@ -12,11 +20,9 @@
           I am Jerome Depotter. I am a Senior Software Engineer offering more than 7 years in the full software and website development lifecycle.
           I have worked in different domains: oil and gas services, telecommunications, healthcare software.
         </p>
+        <p>I am a polyglotte software engineer able to play with various languages such as C#, Python or JavaScript. I am always motivated to improve my skills and learn new technologies.</p>
         <p>
-          I am a polyglotte software engineer able to play with various languages such as C#, Python or JavaScript. I am always motivated to improve my skills and learn new technologies.
-        </p>
-        <p>
-          I have good abilities to understand customer needs in order to release the best product. 
+          I have good abilities to understand customer needs in order to release the best product.
           I am known for having excellent troubleshooting skills and be able to analyze code to quickly resolve issues and propose cost-effective and responsive solutions.
         </p>
         <!-- <p>
@@ -29,7 +35,7 @@
         </p>
         <p>
           I am currently working at Transplant Connect where I work on iTransplant, a web Donation and Transplantation Platform used by organ transplantation agencies in the US, Canada and Australia.
-        </p> -->
+        </p>-->
       </v-col>
     </v-row>
   </v-container>

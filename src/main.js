@@ -15,6 +15,7 @@ import {
   faLaptopCode,
   faCogs,
   faFolderOpen,
+  faFileDownload,
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
@@ -33,6 +34,7 @@ library.add(faCogs);
 library.add(faFolderOpen);
 library.add(faGithub);
 library.add(faLinkedinIn);
+library.add(faFileDownload);
 
 Vue.use(vueScrollto)
 

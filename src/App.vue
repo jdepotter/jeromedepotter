@@ -50,10 +50,10 @@
             </v-list-item-group>
           </v-list>
         </v-menu>
-        <v-toolbar-title>Jerome Depotter</v-toolbar-title>
         <v-spacer></v-spacer>
         <font-awesome-icon :icon="['fab', 'linkedin-in']" size="lg" class="p-brand" @click="openLinkedin()" style="margin-right: 25px"/>
-        <font-awesome-icon :icon="['fab', 'github']" size="lg" class="p-brand" @click="openGithub()" style="margin-right: 10px"/>
+        <font-awesome-icon :icon="['fab', 'github']" size="lg" class="p-brand" @click="openGithub()" style="margin-right: 25px"/>
+        <font-awesome-icon :icon="['fa', 'file-download']" size="lg" class="p-brand" @click="downloadResume()" style="margin-right: 10px"/>
     </v-app-bar>
     <v-layout>   
       <v-card dark>
@@ -118,11 +118,14 @@
           </v-list>
           <v-container style="padding-top:10px; padding-bottom:0px">
             <v-row justify="center">
-              <v-col lg="4" md="4">
+              <v-col lg="3" md="3">
                 <font-awesome-icon :icon="['fab', 'linkedin-in']" size="lg" class="p-brand" @click="openLinkedin()"/>
               </v-col>
-              <v-col lg="4" md="4">
+              <v-col lg="3" md="3">
                 <font-awesome-icon :icon="['fab', 'github']" size="lg" class="p-brand" @click="openGithub()"/>
+              </v-col>
+              <v-col lg="3" md="3">
+                <font-awesome-icon :icon="['fa', 'file-download']" size="lg" class="p-brand" @click="downloadResume()"/>
               </v-col>
             </v-row>
           </v-container>
@@ -130,27 +133,27 @@
       </v-card>
       <v-main :class="{'p-content': !$vuetify.breakpoint.mobile, 'p-content-mobile': $vuetify.breakpoint.mobile}">
         <v-container fluid>
-          <v-card id="p-home" class="p-card" :flat="$vuetify.breakpoint.mobile" light>
+          <v-card id="p-home" class="p-card" light>
             <Home></Home>
           </v-card>
-          <v-card id="p-about" class="p-card" :flat="$vuetify.breakpoint.mobile" light>
+          <v-card id="p-about" class="p-card" light>
             <v-card-text>
               <h2 class="p-card-title" :class="`grey--text text--darken-2`">About Me</h2>
             </v-card-text>
             <About></About>
           </v-card>
-          <v-card id="p-resume" class="p-card" :flat="$vuetify.breakpoint.mobile" light>
-            <v-card-text>
+          <v-card id="p-resume" class="p-card" light>
+            <v-card-text >
               <h2 class="p-card-title" :class="`grey--text text--darken-2`">Resume</h2>
             </v-card-text>
-            <Resume></Resume>
+            <Resume ></Resume>
           </v-card>
-          <v-card id="p-projects" class="p-card" :flat="$vuetify.breakpoint.mobile" light>
+          <v-card id="p-projects" class="p-card" light>
             <v-card-text>
               <h2 class="p-card-title" :class="`grey--text text--darken-2`">Projects</h2>
             </v-card-text>
           </v-card>
-          <v-card id="p-skills" class="p-card" :flat="$vuetify.breakpoint.mobile" light>
+          <v-card id="p-skills" class="p-card" light>
             <v-card-text>
               <h2 class="p-card-title" :class="`grey--text text--darken-2`">Skills</h2>
               <Skills></Skills>
@@ -185,6 +188,9 @@ export default {
     },
     openGithub: function() {
       window.open("https://github.com/jdepotter", "_blank")
+    },
+    downloadResume: function() {
+      window.open("/files/jdepotter.pdf", "_blank")
     } 
   }
 };

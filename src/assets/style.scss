@@ -57,8 +57,25 @@
     }
 
     .p-about {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 60px;
+        padding-right: 60px;
+
+        .p-col-1 {
+            h4 {
+                width: 100px;
+            }
+        }
+
+        .p-col-2 {
+            h4 {
+                width: 100px;
+            }
+        }
+
+        .p-button {
+            padding-top: 10px; 
+            padding-bottom: 10px
+        }
     }
 }
 
@@ -83,7 +100,6 @@
 
         li {
             font-size: small;
-            text-align: justify;
             text-justify: inter-word;
         }
     }
@@ -113,11 +129,46 @@
     .p-home {
         text-align: justify;
         text-justify: inter-word;
+        font-size: small;
+    }
+
+    .p-about {
+        padding-left: 25px;
+        padding-right: 25px;
+
+        .p-col-1 {
+            h4 {
+                width: 100px;
+                font-size: small;
+            }
+
+            p {
+                font-size: small;
+            }
+        }
+
+        .p-col-2 {
+            h4 {
+                width: 100px;
+                font-size: small;
+            }
+
+            li {
+                font-size: small;
+                text-justify: inter-word;
+            }
+        }
+
+        .p-button {
+            padding-top: 20px; 
+            padding-bottom: 10px;
+        }
     }
 }
 
 .p-brand:hover {
     cursor: pointer;
+    color: #BDBDBD
 }
 
 .p-card-mobile {
