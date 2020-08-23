@@ -1,0 +1,125 @@
+#p-navigation {
+    margin-left: 5%;
+    margin-top: 60px;
+}
+
+.p-content {
+    margin-top: 48px;
+
+    .p-card {
+        margin-left: 20%;
+        margin-right: 15%;
+        margin-bottom: 20px;
+    
+        .p-card-title {
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+    }
+
+    .p-timeline {
+        padding-left: 50px;
+        padding-right: 50px;
+
+        li {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+    }
+
+    .p-skill {
+        .p-skill-block {
+            margin-left: 20px;
+    
+            .p-skill-col {
+                min-width: 280px;
+                max-width: 280px;
+            }
+    
+            .p-skill-name {
+                padding-top: 5px;
+                width: 100px;
+            }
+        }
+    
+        .p-skill-title {
+            margin-left: 20px;
+            margin-top: 20px
+        }
+    }
+    
+    .p-home {
+        padding-left: 50px;
+        padding-right: 50px;
+
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .p-about {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+.p-content-mobile {
+    margin-top: 48px;
+
+    .p-card {
+        margin-bottom: 20px;
+    }
+
+    .p-timeline {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        h3 {
+            font-size: 14pt;
+        }
+
+        p {
+            font-size: small;
+        }
+
+        li {
+            font-size: small;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+    }
+
+    .p-skill {
+        .p-skill-block {
+            margin-left: 0;
+    
+            .p-skill-col {
+                min-width: 250px;
+                max-width: 250px;
+            }
+    
+            .p-skill-name {
+                padding-top: 0;
+                width: 100px;
+                font-size: small;
+            }
+        }
+    
+        .p-skill-title {
+            margin-left: 0;
+            margin-top: 20px
+        }
+    }
+
+    .p-home {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+}
+
+.p-brand:hover {
+    cursor: pointer;
+}
+
+.p-card-mobile {
+    margin-bottom: 20px;
+}
