@@ -1,4 +1,4 @@
-# jerome.depotter.com
+# jeromedepotter.com
 
 ## Project setup
 ```
