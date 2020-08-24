@@ -122,13 +122,13 @@
                 "opposite": "Nov. 2015 - Present",
                 "header_2": "Transplant Connect (Los Angeles)",
                 "header_1": "Full-Stack Software Engineer",
-                "header_3": "C#, ASP.NET MVC 5 and Webform, SQL Server, REST API, HTML, CSS, jQuery, Node.js, Vue.js, Python",
+                "header_3": "C#, ASP.NET MVC 5 and Webform, SQL Server, REST API, HTML, CSS, jQuery, Node.js, Vue.js, Python, AWS",
                 "details": [
                     "Work on iTransplant, a web Donation and Transplantation Platform used by Organ Transplantation Agencies in the US, Canada and Australia",
                     "Software Engineer front and back end on iTransplant. Working in a team of 15 developers",
                     "Design and implement new features on iTransplant such as new pages, new components and API interfaces",
                     "Handle client reported production issues that need development support. Implement patches and hotfixes",
-                    "handle production deployment of new releases and patches using Bitbucket, Bamboo and Ocotopus",
+                    "Handle production deployment of new releases and patches using Bitbucket, Bamboo and Ocotopus",
                     "Participate to estimation meetings and features building meetings",
                     "Work on several other projects to improve code quality and develop tools used by the team"
                 ]
