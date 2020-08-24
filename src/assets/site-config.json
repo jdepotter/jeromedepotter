@@ -76,7 +76,7 @@
         "header": "Hi,",
         "paragraphs": [
             "I am Jerome Depotter. I am a Senior Software Engineer offering more than 7 years in the full software and website development lifecycle. I have worked in different domains: oil and gas services, telecommunications, healthcare software.",
-            "I am a polyglotte software engineer able to play with various languages such as C#, Python or JavaScript. I am always motivated to improve my skills and learn new technologies.",
+            "I am a polyglot software engineer able to play with various languages such as C#, Python or JavaScript. I am always motivated to improve my skills and learn new technologies.",
             "I have good abilities to understand customer needs in order to release the best product. I am known for having excellent troubleshooting skills and be able to analyze code to quickly resolve issues and propose cost-effective and responsive solutions."
         ]
     },
@@ -159,10 +159,10 @@
                 "header_1": "Software Engineer",
                 "header_3": "C#, WPF, SQL",
                 "details": [
-                    "Software engineer on a flagship project for Donwhole Testing. This project brings real time communication between surface and downhole tools using acoustic telemetry. It permits to save time and millions of dollars during reservoir characterization",
+                    "Software engineer on a flagship project for Donwhole Testing. This project brings real-time communication between the surface and the downhole tools using acoustic telemetry. It permits to save time and millions of dollars during reservoir characterization",
                     "Design and develop in C# and WPF the monitoring and acquisition software used at the surface",
                     "Define new functionalities to improve the software and enable teams on the field to deliver the best services to the final client",
-                    "Provide a reactive and efficient support for teams on the field"
+                    "Provide reactive and efficient support for teams on the field"
                 ]
             },
             {
