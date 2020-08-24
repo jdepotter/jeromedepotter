@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="p-home">
     <v-row>
-      <v-col md="2" lg="2" sm="12" cols="12">
+      <v-col md="12" lg="2" sm="12" cols="12">
         <v-row align="center">
           <v-col sm="4" cols="4">
             <v-avatar size="100" style="margin-bottom: 5px">
@@ -14,7 +14,7 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-col md="10" lg="10" sm="12" cols="12">
+      <v-col md="12" lg="10" sm="12" cols="12">
         <h3>{{home.header}}</h3>
         <p v-for="(p, i) in home.paragraphs" :key="i">
           {{p}}
