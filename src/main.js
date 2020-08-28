@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import vueScrollto from 'vue-scrollto'
+import VueAnalytics from 'vue-analytics';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fortawesome/vue-fontawesome';
@@ -37,6 +38,10 @@ library.add(faLinkedinIn);
 library.add(faFileDownload);
 
 Vue.use(vueScrollto)
+
+Vue.use(VueAnalytics, {
+  id: 'UA-176720264-1'
+});
 
 Vue.config.productionTip = false
 
