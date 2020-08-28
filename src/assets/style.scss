@@ -110,6 +110,23 @@
             padding-bottom: 10px
         }
     }
+
+    .p-projects {
+        .p-project-name {
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 10px
+        }
+
+        .p-project-block {
+            margin-left: 20px;
+            margin-right: 20px;
+
+            p {
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
 
 .p-content-mobile {

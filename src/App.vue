@@ -93,12 +93,13 @@
             <v-card-text>
               <h2 class="p-card-title" :class="`light-blue--text text--darken-3`">{{cards.projects}}</h2>
             </v-card-text>
+            <Projects></Projects>
           </v-card>
           <v-card id="p-skills" class="p-card rounded-lg" light elevation=2>
             <v-card-text>
-              <h2 class="p-card-title" :class="`light-blue--text text--darken-3`">{{cards.skills}}</h2>
-              <Skills></Skills>
+              <h2 class="p-card-title" :class="`light-blue--text text--darken-3`">{{cards.skills}}</h2>              
             </v-card-text>
+            <Skills></Skills>
           </v-card>
         </v-container>
       </v-main>
@@ -111,6 +112,7 @@ import Resume from "@/components/Resume";
 import Skills from "@/components/Skills";
 import Home from "@/components/Home";
 import About from "@/components/About";
+import Projects from "@/components/Projects";
 
 import siteConfig from "./assets/site-config";
 
@@ -121,6 +123,7 @@ export default {
     Skills,
     Home,
     About,
+    Projects,
   },
   data: () => ({     
   }),
