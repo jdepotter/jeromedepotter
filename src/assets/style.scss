@@ -124,6 +124,9 @@
 
             p {
                 margin-bottom: 10px;
+                text-align: justify;
+                text-justify: inter-word;
+
             }
         }
     }
@@ -232,6 +235,25 @@
         .p-button {
             padding-top: 20px; 
             padding-bottom: 10px;
+        }
+    }
+
+    .p-projects {
+        .p-project-name {
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 10px
+        }
+
+        .p-project-block {
+            margin-left: 0;
+            margin-right: 0;
+
+            p {
+                margin-bottom: 10px;
+                text-align: justify;
+                text-justify: inter-word;
+            }
         }
     }
 }
