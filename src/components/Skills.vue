@@ -1,7 +1,7 @@
 <template>
   <v-container class="p-skill">
     <div v-for="(skill, i) in skills.categories" :key="i">
-      <h3 class="p-skill-title" :class="`grey--text text--darken-3`">{{skill.title}}</h3>
+      <h3 class="p-skill-title" :class="`light-blue--text text--darken-3`">{{skill.title}}</h3>
       <v-row class="p-skill-block">
         <template v-for="(item, i) in skill.items">
           <v-col :key="i" class="p-skill-col">
@@ -9,8 +9,8 @@
               <h3 class="p-skill-name">{{item.name}}</h3>
               <v-rating
                 v-model="item.score"
-                color="amber darken-1"
-                background-color="grey darken-1"
+                color="amber lighten-1"
+                background-color="amber lighten-4"
                 :small="$vuetify.breakpoint.mobile"
                 :medium="!$vuetify.breakpoint.mobile"
                 half-increments

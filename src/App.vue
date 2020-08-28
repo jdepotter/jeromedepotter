@@ -1,18 +1,18 @@
 <template>
   <v-app>
-    <v-app-bar dense flat v-show="$vuetify.breakpoint.mobile" fixed dark>
-      <v-menu offset-y dark>
+    <v-app-bar dense flat v-show="$vuetify.breakpoint.mobile" fixed :class="`blue-grey lighten-4`">
+      <v-menu offset-y>
         <template v-slot:activator="{ on }">
           <v-app-bar-nav-icon v-on="on"></v-app-bar-nav-icon>
         </template>
-        <v-list>
+        <v-list :class="`blue-grey lighten-4`">
           <v-list-item-group>
             <v-list-item v-for="(item, i) in menu_items" :key="i" v-scroll-to="item.scrollToMobile">
               <v-list-item-icon>
-                <font-awesome-icon :icon="item.icon" size="1x" />
+                <font-awesome-icon :icon="item.icon" size="1x" :style="{'color': '#0277BD'}"/>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title>{{item.title}}</v-list-item-title>
+                <v-list-item-title :class="`font-weight-bold grey--text text--darken-2`">{{item.title}}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </v-list-item-group>
@@ -22,15 +22,16 @@
       <font-awesome-icon v-for="(link, i) in links_model" :key="i"
         :icon="link.icon"
         size="lg"
+        :style="{'color': '#2E7D32'}"
         class="p-brand"
         @click="(windowOpen(link.target))"
         style="margin-left: 25px"
       />
     </v-app-bar>
     <v-layout>
-      <v-card dark class="rounded-lg">
-        <v-navigation-drawer id="p-navigation" fixed left height="450" width="200">
-          <v-list dense>
+      <v-card light class="rounded-lg">
+        <v-navigation-drawer id="p-navigation" fixed left height="470" width="220" :class="`blue-grey lighten-4`">
+          <v-list>
             <v-list-item>
               <v-list-item-avatar>
                 <img :src="global.avatar" />
@@ -38,8 +39,8 @@
             </v-list-item>
             <v-list-item two-line>
               <v-list-item-content>
-                <v-list-item-title>{{global.name}}</v-list-item-title>
-                <v-list-item-subtitle>{{global.position}}</v-list-item-subtitle>
+                <v-list-item-title id="p-name" :class="`font-weight-bold light-blue--text text--darken-3`">{{global.name}}</v-list-item-title>
+                <v-list-item-subtitle id="p-position" :class="`grey--text text--darken-2`">{{global.position}}</v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
             <v-divider></v-divider>
@@ -48,20 +49,21 @@
             <v-list-item-group>
               <v-list-item v-for="(item, i) in menu_items" :key="i" v-scroll-to="item.scrollTo">
                 <v-list-item-icon>
-                  <font-awesome-icon :icon="item.icon" size="1x" />
+                  <font-awesome-icon :icon="item.icon" size="1x" :style="{'color': '#0277BD'}"/>
                 </v-list-item-icon>
                 <v-list-item-content>
-                  <v-list-item-title>{{item.title}}</v-list-item-title>
+                  <v-list-item-title :class="`font-weight-bold grey--text text--darken-2`">{{item.title}}</v-list-item-title>
                 </v-list-item-content>
               </v-list-item>
             </v-list-item-group>
           </v-list>
           <v-container class="p-link-icon">
             <v-row justify="center">
-              <v-col v-for="(link, i) in links_model" :key="i" lg="3" md="3">
+              <v-col v-for="(link, i) in links_model" :key="i" lg="3" md="4">
                 <font-awesome-icon
                   :icon="link.icon"
                   size="lg"
+                  :style="{'color': '#2E7D32'}"
                   class="p-brand"
                   @click="windowOpen(link.target)"
                 />
@@ -72,29 +74,29 @@
       </v-card>
       <v-main :class="{'p-content': !$vuetify.breakpoint.mobile, 'p-content-mobile': $vuetify.breakpoint.mobile}">
         <v-container fluid>
-          <v-card id="p-home" class="p-card rounded-lg" light>
+          <v-card id="p-home" class="p-card rounded-lg" light elevation=2>
             <Home></Home>
           </v-card>
-          <v-card id="p-about" class="p-card rounded-lg" light>
+          <v-card id="p-about" class="p-card rounded-lg" light elevation=2>
             <v-card-text>
-              <h2 class="p-card-title" :class="`grey--text text--darken-2`">{{cards.about}}</h2>
+              <h2 class="p-card-title" :class="`light-blue--text text--darken-3`">{{cards.about}}</h2>
             </v-card-text>
             <About></About>
           </v-card>
-          <v-card id="p-resume" class="p-card rounded-lg" light>
+          <v-card id="p-resume" class="p-card rounded-lg" light elevation=2>
             <v-card-text>
-              <h2 class="p-card-title" :class="`grey--text text--darken-2`">{{cards.experience}}</h2>
+              <h2 class="p-card-title" :class="`light-blue--text text--darken-3`">{{cards.experience}}</h2>
             </v-card-text>
             <Resume></Resume>
           </v-card>
-          <v-card id="p-projects" class="p-card rounded-lg" light>
+          <v-card id="p-projects" class="p-card rounded-lg" light elevation=2>
             <v-card-text>
-              <h2 class="p-card-title" :class="`grey--text text--darken-2`">{{cards.projects}}</h2>
+              <h2 class="p-card-title" :class="`light-blue--text text--darken-3`">{{cards.projects}}</h2>
             </v-card-text>
           </v-card>
-          <v-card id="p-skills" class="p-card rounded-lg" light>
+          <v-card id="p-skills" class="p-card rounded-lg" light elevation=2>
             <v-card-text>
-              <h2 class="p-card-title" :class="`grey--text text--darken-2`">{{cards.skills}}</h2>
+              <h2 class="p-card-title" :class="`light-blue--text text--darken-3`">{{cards.skills}}</h2>
               <Skills></Skills>
             </v-card-text>
           </v-card>

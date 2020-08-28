@@ -75,10 +75,10 @@
     "home": {
         "header": "Hi,",
         "paragraphs": [
-            "I am Jerome Depotter. I am a Senior Software Engineer offering more than 8 years in the full software and website development lifecycle. I have worked in different domains: oil and gas services, telecommunications, healthcare software.",
-            "I am a polyglot software engineer able to play with various languages such as C#, Python or JavaScript. I have proven ability to work and quickly adapt to multiple technologies.",
-            "I have good abilities to understand customer needs in order to release the best product.", 
-            "I am known for having excellent troubleshooting skills and be able to analyze code to quickly resolve issues and propose cost-effective and responsive solutions."
+            "I am <b class='p-large'>Jerome Depotter</b>. I am a <b class='p-large'>Senior Software Engineer</b> offering more than <b class='p-large'>8 years</b> in the full software and website development lifecycle. I have worked in different industries and countries.",
+            "I am a <b>polyglot software engineer</b> able to play with various languages such as C#, Python or JavaScript. I have proven ability to work with and <b>quickly adapt</b> to multiple technologies.",
+            "I have <b>good abilities to understand customer needs</b> in order to release the best product.", 
+            "I am known for having <b>excellent troubleshooting skills</b> and be able to analyze code to quickly resolve issues and propose cost-effective and responsive solutions."
         ]
     },
     "about": {
@@ -106,7 +106,8 @@
                 "items": [
                     {
                         "header": "Master Degree in Computer Science (2012)",
-                        "details": "Institut Nationale des Sciences Appliquees de Lyon, France"
+                        "details": "Institut Nationale des Sciences Appliquees de Lyon, France",
+                        "subDetails": "A french top leading school in Computer Science"
                     },
                     {
                         "header": "Bachelor Degree in Software and Firmware Science (2009)",
@@ -123,15 +124,15 @@
                 "opposite": "Nov. 2015 - Present",
                 "header_2": "Transplant Connect (Los Angeles)",
                 "header_1": "Full-Stack Software Engineer",
-                "header_3": "C#, ASP.NET MVC 5 and Webform, SQL Server, REST API, HTML, CSS, jQuery, Node.js, Vue.js, Python, AWS",
+                "header_3": "C#, ASP.NET MVC 5 and Webform, SQL Server, REST API, HTML, CSS, jQuery, Node.js, Vue.js, Python, AWS, Bamboo, Octopus",
                 "details": [
-                    "Work on iTransplant, a web Donation and Transplantation Platform used by Organ Transplantation Agencies in the US, Canada and Australia",
-                    "Software Engineer front and back end on iTransplant. Working in a team of 15 developers",
-                    "Design and implement new features on iTransplant such as new pages, new components and API interfaces",
-                    "Handle client reported production issues that need development support. Implement patches and hotfixes",
-                    "Handle production deployment of new releases and patches using Bitbucket, Bamboo and Ocotopus",
-                    "Participate to estimation meetings and features building meetings",
-                    "Work on several other projects to improve code quality and develop tools used by the team"
+                    "Work on <b>iTransplant</b>, a web <b>Donation and Transplantation Platform</b> used by Organ Transplantation Agencies in the <b>US</b>, <b>Canada</b> and <b>Australia</b>",
+                    "Software Engineer <b>front and back end</b> on iTransplant. Working in a team of 15 developers",
+                    "<b>Design and implement</b> new features on iTransplant such as new pages, new components and <b>API interfaces</b>",
+                    "Handle client reported production issues that need <b>development support</b>. Implement patches and hotfixes",
+                    "Handle <b>production deployment</b> of new releases and patches using Bitbucket, Bamboo and Ocotopus",
+                    "Participate to <b>estimation meetings</b> and <b>features building meetings</b>",
+                    "Work on several other projects to <b>improve code quality</b> and <b>develop tools</b> used by the team"
                 ]
             },
             {
@@ -140,9 +141,9 @@
                 "header_1": "Senior Software Engineer",
                 "header_3": "Node.js, Vue.js, Python, Protobuf, ZMQ Socket, Web Socket, PostgresSQL, Postgis, Docker, Arcgis",
                 "details": [
-                    "Work on a research project to supervise an autonomous subsea robot used to inspect subsea petroleum assets",
-                    "Develop front and back end of a web app used to supervise communications with a wireless subsea robot",
-                    "Develop front and back end of a web app used to visualize and positioned in a 3D map, subsea equipments and the robot"
+                    "Work on <b>Aquatic Monitoring</b> a research project to supervise an <b>AUV</b>, <b>Autonomous Under-water Vehicle</b> used to inspect <b>subsea petroleum assets</b>",
+                    "<b>Develop front and back end</b> of a web app used to <b>monitor communications</b> with a wireless subsea robot",
+                    "<b>Develop front and back end</b> of a web app used to <b>visualize and positioned</b> in a <b>3D map</b>, subsea equipments and the AUV"
                 ]
             },
             {
@@ -151,9 +152,9 @@
                 "header_1": "Embedded Software Engineer",
                 "header_3": "C, C++, WebRTC",
                 "details": [
-                    "Work on the firmware of a smart home phone based on Android",
-                    "Design and program in C and C++ the integration of a Bluetooth handset",
-                    "Work on the improvement of VP8 video decoding using hardware decoding"
+                    "Work on the firmware of <b>Ily</b>, a <b>smart home phone</b> based on Android",
+                    "<b>Design and program</b> the integration of a <b>Bluetooth</b> handset",
+                    "Work on the <b>improvement</b> of <b>VP8 video decoding</b> using hardware decoding"
                 ]
             },
             {
@@ -162,10 +163,10 @@
                 "header_1": "Software Engineer",
                 "header_3": "C#, WPF, SQL",
                 "details": [
-                    "Software engineer on a flagship project for Donwhole Testing. This project brings real-time communication between the surface and the downhole tools using acoustic telemetry. It permits to save time and millions of dollars during reservoir characterization",
-                    "Design and develop in C# and WPF the monitoring and acquisition software used at the surface",
-                    "Define new functionalities to improve the software and enable teams on the field to deliver the best services to the final client",
-                    "Provide reactive and efficient support for teams on the field"
+                    "Software engineer on <b>Muzic Acquisition</b>, a <b>flagship project</b> for Donwhole Testing. This project brings <b>real-time communication</b> between the surface and the <b>downhole tools</b> using <b>acoustic telemetry</b>. It permits to save time and <b>millions of dollars</b> during reservoir characterization",
+                    "<b>Design and develop</b> the monitoring and acquisition software used at the surface",
+                    "<b>Define new features</b> to improve the software and enable teams on the field to deliver the <b>best services</b> to the final client",
+                    "Provide <b>reactive and efficient support</b> for teams on the field"
                 ]
             },
             {
@@ -174,8 +175,8 @@
                 "header_1": "Software Engineer Trainee",
                 "header_3": "C++, C#, WPF",
                 "details": [
-                    "Design and program in C++ a countermeasure system for a military aircraft simulator",
-                    "Design and program in C# and WPF, on my proposal, a testing platform using Bing Map to place threats and Microsoft Flight Simulator to manage aircraft position"
+                    "<b>Design and program</b> in C++ a <b>countermeasure system</b> for a military aircraft simulator",
+                    "<b>Design and program</b> in C# and WPF, on my proposal, a <b>testing platform</b> using Bing Map to place threats and Microsoft Flight Simulator to manage aircraft position"
                 ]
             }
         ]
@@ -262,6 +263,31 @@
                     {
                         "name": "MongoDB",
                         "score": 2
+                    }
+                ]
+            },
+            {
+                "title": "Development lifecycle",
+                "items": [
+                    {
+                        "name": "Visual Studio",
+                        "score": 4.5
+                    },
+                    {
+                        "name": "VS Code",
+                        "score": 4.5
+                    },
+                    {
+                        "name": "Git",
+                        "score": 4
+                    },
+                    {
+                        "name": "Octopus",
+                        "score": 3
+                    },
+                    {
+                        "name": "CI/CD",
+                        "score": 3.5
                     }
                 ]
             }

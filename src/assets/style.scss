@@ -1,5 +1,5 @@
 #p-navigation {
-    margin-left: 5%;
+    margin-left: 4%;
     margin-top: 60px;
 
     .p-link-icon {
@@ -8,11 +8,19 @@
     }
 }
 
+#p-name {
+    font-size: 1.5rem;
+}
+
+#p-position {
+    font-size: 1rem;
+}
+
 .p-content {
     margin-top: 48px;
 
     .p-card {
-        margin-left: 20%;
+        margin-left: 21%;
         margin-right: 15%;
         margin-bottom: 20px;
     
@@ -29,6 +37,10 @@
         li {
             text-align: justify;
             text-justify: inter-word;
+
+            b {
+                color: #424242;
+            }
         }
     }
 
@@ -59,6 +71,18 @@
 
         text-align: justify;
         text-justify: inter-word;
+
+        b {
+            color:#0277BD;
+        }
+
+        b.p-large {
+            font-size: 1.3rem
+        }
+
+        h3 {
+            font-size: 1.3rem;
+        }
     }
 
     .p-about {
@@ -96,8 +120,8 @@
     }
 
     .p-timeline {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 0px;
+        padding-right: 10px;
 
         h3 {
             font-size: 14pt;
@@ -110,6 +134,10 @@
         li {
             font-size: small;
             text-justify: inter-word;
+
+            b {
+                color: #424242;
+            }
         }
     }
 
@@ -139,6 +167,22 @@
         text-align: justify;
         text-justify: inter-word;
         font-size: small;
+
+        b.p-large {
+            font-size: 1.1rem
+        }
+
+        b {
+            color:#0277BD;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+        }
+
+        h4 {
+            font-size: 1rem;
+        }
     }
 
     .p-about {
