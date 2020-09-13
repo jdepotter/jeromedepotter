@@ -138,7 +138,7 @@
             {
                 "opposite": "Jan. 2019 - Jun. 2020",
                 "header_2": "Schlumberger (Remote)",
-                "header_1": "Senior Software Engineer",
+                "header_1": "Senior Software Engineer freelance",
                 "header_3": "Node.js, Vue.js, Python, Protobuf, ZMQ Socket, Web Socket, PostgresSQL, Postgis, Docker, Arcgis",
                 "details": [
                     "Work on <b>Aquatic Monitoring</b> a research project to supervise an <b>AUV</b>, <b>Autonomous Under-water Vehicle</b> used to inspect <b>subsea petroleum assets</b>",
@@ -301,15 +301,15 @@
                     {
                         "type": "text",
                         "val": [
-                            "Aquatic Monitoring is a research project to supervise an AUV, Aunomous Under-water Vehicle use to inspect oil and gas assets."
+                            "Aquatic Monitoring is a research project for the development of an Aunomous Under-water Vehicle (AUV) used to inspect oil and gas assets."
                         ]
                     },
                     {
                         "type": "text",
                         "val": [
-                            "I have worked on this project as a freelancer for Schlumberger. My first task was to design and implement a web server and a web client to monitor the wireless communication with the AUV. ",
-                            "Since the web server was not the only application that should be able to communicate with the AUV, this one was not directly sending message to the network interface which communicate with the AUV. ",
-                            "A software called Acquatic Monitoring Server was connected to the network interface and was broadcasting answers through a ∅MQ socket. "
+                            "I have worked on this project as a freelancer for Schlumberger. My first task consisted on the design and implementation of a web server and web client to monitor the wireless communication with the AUV. ",
+                            "Since the web server was not the only application communicating with the AUV, the latter was not directly sending messages to the network interface which communicate with the AUV. ",
+                            "A software called Acquatic Monitoring Server is connected to the network interface and broadcasts answers through a ∅MQ socket. "
 
                         ]
                     },
@@ -317,21 +317,21 @@
                         "type": "text",
                         "val": [
                             "∅MQ gives sockets that carry atomic messages across various transports like inter-process or TCP. It allows request-response and publish-subscription communication. ",
-                            "The communication with the AUV is asynchrone since sending and receiving message through a wireless communication under-water takes multiple seconds. ",
-                            "The request is sent through a request-response channel. Acquatic Monitoring Server response with an ackknowledgment and send the query to the AUV. The answer is broadcast through a publish-subscription channel. "
+                            "The communication with the AUV is asynchrone since sending and receiving messages through a wireless communication under-water takes multiple seconds. ",
+                            "The request is sent through a request-response channel. Acquatic Monitoring Server responds with an ackknowledgment and sends the query to the AUV. The answer is broadcasted through a publish-subscription channel. "
                         ]
                     },
                     {
                         "type": "text",
                         "val": [
-                            "The web server communicate with Aquatic Monitoring Server sending messages encaspulated with Protobuf protocol through ∅MQ sockets and transmit the data to web clients. Clients send requests to the server using REST API and receive responses through web sockets. ",
-                            "The web server is build with Node.js and Express.js. The client is made with Vue.js. Both Acquatic Monitoring Server and Acquatic Monitoring Web Server run on Docker on a machine installed on a boat. "
+                            "The web server communicates with Aquatic Monitoring Server by sending messages encaspulated with Protobuf protocol through ∅MQ sockets and transmits the data to web clients. Clients send requests to the server using REST API and receive responses through web sockets. ",
+                            "The web server is built with Node.js and Express.js. The client is made with Vue.js. Both Acquatic Monitoring Server and Acquatic Monitoring Web Server run on Docker on a machine installed on a boat. "
                         ]
                     },
                     {
                         "type": "text",
                         "val": [
-                            "After having implemented the architecture and the wireless communication monitoring dashboard, I have added multiple features including panel to send command to move the AUV, display images sent by the AUV and configure and get data from sensors. "
+                            "After having implemented the architecture and the wireless communication monitoring dashboard, I have added multiple features including a panel to send commands to move the AUV, display images sent by the AUV and configure and get data from sensors. "
                         ]
                     },
                     {
