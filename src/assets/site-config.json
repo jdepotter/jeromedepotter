@@ -1,7 +1,7 @@
 {
     "global": {
         "name": "Jerome Depotter",
-        "position": "Software Engineer",
+        "position": "Senior Engineering Manager",
         "avatar": "./files/jdepotter.jpeg"
     },
     "links": {
@@ -22,7 +22,7 @@
             }
         },
         {
-            "title": "Aboute Me",
+            "title": "About Me",
             "icon": "user",
             "scrollTo": {
                 "el": "#p-about"
@@ -44,17 +44,6 @@
             }
         },
         {
-            "title": "Projects",
-            "icon": "folder-open",
-            "scrollTo": {
-                "el": "#p-projects"
-            },
-            "scrollToMobile": {
-                "el": "#p-projects",
-                "offset": -48
-            }
-        },
-        {
             "title": "Skills",
             "icon": "cogs",
             "scrollTo": {
@@ -69,16 +58,17 @@
     "cards": {
         "about": "About Me",
         "experience": "Experience",
-        "projects": "Projects",
         "skills": "Skills"
     },
     "home": {
         "header": "Hi,",
         "paragraphs": [
-            "I am <b class='p-large'>Jerome Depotter</b>. I am a <b class='p-large'>Senior Software Engineer</b> offering more than <b class='p-large'>8 years</b> in the full software and website development lifecycle. I have worked in different industries and countries.",
-            "I am a <b>polyglot software engineer</b> able to play with various languages such as C#, Python or JavaScript. I have proven ability to work with and <b>quickly adapt</b> to multiple technologies.",
-            "I have <b>good abilities to understand customer needs</b> in order to release the best product.",
-            "I am known for having <b>excellent troubleshooting skills</b> and be able to analyze code to quickly resolve issues and propose cost-effective and responsive solutions."
+            "I am <b class='p-large'>Jerome Depotter</b>. I am a <b class='p-large'>Senior Software Engineering Manager</b>",
+            "<b>Experienced software engineering professional</b> with more than <b>10 years</b> in the field, with <b>3 years</b> spent in a leadership role as lead engineer and engineering manager.",
+            "Driven by a deep <b>passion for technology</b> and a relentless commitment to <b>client satisfaction</b>, I excel in understanding and addressing client needs.",
+            "With a focus on fostering <b>team growth and development</b>, I am a strong communicator dedicated to the success of every team member.",
+            "My diverse background spans multiple domains, including oil and gas services, telecommunications, healthcare, and sales software. Eager to take on <b>new challenges</b>, I currently <b>lead a team of 5 engineers while overseeing a flagship product.</b>",
+            "Recognized for my <b>excellent troubleshooting skills</b> and proactive problem-solving approach."
         ]
     },
     "about": {
@@ -120,6 +110,46 @@
     },
     "resume": {
         "items": [
+            {
+                "opposite": "Sep. 2022 - Present",
+                "header_2": "SetSail (San Mateo, Remote)",
+                "header_1": "Senior Software Engineering Manager",
+                "header_3": "Python, Pandas, Docker, AWS (Athena,ECS, SQS, Lambda, ...), CircleCI, Node.js, Terraform, Salesforce, GPT",
+                "details": [
+                    "About <b>SetSail</b>: Our mission is to empower teams with a new way to sell. As the <b>first Revenue Execution Platform</b>, SetSail focuses sales on small wins that lead to the big win. SetSail uses machine learning and <b>AI</b> to identify key <b>buying signals</b> that lead to successful deals. SetSail then tracks those signals and allows sales leaders to create automated programs that <b>drive top rep behaviors.</b>",
+                    "<b>Led the engineering efforts</b> for the <b>CRM Writeback</b> product, closely collaborating with the product manager to <b>scope, plan, and prioritize initiatives.</b>",
+                    "<b>Managed and provided mentorship</b> to a team of 5 software engineers, including junior, senior and staff-level members working on CRM Writeback and SetSail AI",
+                    "<b>Collaborated</b> with both engineering and data science teams to integrate <b>SetSail AI</b> features into CRM Writeback, amplifying value for our clients."
+                ]
+            },
+            {
+                "opposite": "Oct. 2021 - Sep. 2022",
+                "header_2": "SetSail (San Mateo, Remote)",
+                "header_1": "Software Engineering Manager",
+                "header_3": "Python, Pandas, Docker, AWS (Athena,ECS, SQS, Lambda, ...), CircleCI, Node.js, Terraform, Salesforce",
+                "details": [
+                    "<b>Led the engineering efforts</b> for the <b>CRM Writeback</b> product, closely collaborating with the product manager <b>to scope, plan, and prioritize initiatives</b>. Drove the transformation of the product into a <b>mature and flagship offering</b>",
+                    "<b>Managed and provided mentorship</b> to a team of 3 software engineers, including junior, senior and staff-level members",
+                    "<b>Delivered key feature</b> that positioned us at the <b>forefront of the competitio</b>: Gong, Chorus and Outreach activities capture, events update and delete, activities multi attribution, contact bounced detection, ...",
+                    "<b>Spearheaded collaboration efforts</b> with the customer success team to promptly address <b>client requests</b> and conduct comprehensive investigations into any client issues",
+                    "<b>Collaborated</b> with the product manager, customer success, and sales representatives to implement the <b>CRM DGA (Data Gap Assessment) process</b>, aiding clients in understanding their requirements for a CRM Writeback tool. Demonstrated our activity mapping accuracy with Salesforce entities compared to our competitors",
+                    "Defined <b>client integration and solution implementation processes</b> in collaboration with the customer success team. Partnered on the development of a <b>QA process</b> to guide clients in making optimal configuration choices. <b>Supervised</b> solution configuration and implementation.",
+                    "Streamlined the <b>agile development</b> process and advocated for the adoption of <b>best practices</b>",
+                    "<b>Overseen efforts</b> to improve <b>system performance</b>, <b>scalability</b>, and <b>code maintainability</b>"
+                ]
+            },
+            {
+                "opposite": "Apr. 2021 - Oct. 2022",
+                "header_2": "SetSail (San Mateo, Remote)",
+                "header_1": "Senior Software Engineer",
+                "header_3": "Python, Pandas, Docker, AWS (Athena,ECS, SQS, Lambda, ...), CircleCI, Node.js, Terraform, Salesforce",
+                "details": [
+                    "<b>Played a significant role</b> in <b>CRM Writeback</b>, a cornerstone product at SetSail, by <b>spearheading software development</b> and <b>systems design</b> initiatives. CRM Writeback automates the capture and enrichment of all client sales data, ensuring a comprehensive, enriched, and up-to-date Salesforce CRM without the need for manual entry.",
+                    "<b>Engaged closely</b> with product management to <b>conceptualize and define new features</b>, actively contributing to their implementation.",
+                    "Collaborated with the customer success team to <b>swiftly address client requests</b> and thoroughly <b>investigate any client issues.</b>",
+                    "Contributed to enhancing <b>system scalability</b>, <b>performance</b>, and <b>resilience.</b>"
+                ]
+            },
             {
                 "opposite": "Nov. 2015 - Present",
                 "header_2": "Transplant Connect (Los Angeles)",
@@ -184,111 +214,27 @@
     "skills": {
         "categories": [
             {
-                "title": "Development",
+                "title": "Expertise",
                 "items": [
-                    {
-                        "name": "C#",
-                        "score": 4
-                    },
-                    {
-                        "name": "Python",
-                        "score": 3.5
-                    },
-                    {
-                        "name": "Node.js",
-                        "score": 3.5
-                    },
-                    {
-                        "name": "Vue.js",
-                        "score": 3
-                    },
-                    {
-                        "name": "jQuery",
-                        "score": 3.5
-                    },
-                    {
-                        "name": "C++",
-                        "score": 3
-                    },
-                    {
-                        "name": "SQL",
-                        "score": 3
-                    },
-                    {
-                        "name": "HTML",
-                        "score": 3
-                    },
-                    {
-                        "name": "CSS",
-                        "score": 3
-                    },
-                    {
-                        "name": "ASP.NET",
-                        "score": 4
-                    }
+                    "Team Management", "Problem Solving", "Customer Satisfaction", "Mentorship", "Project Planning and Vision", "Team Growth and Collaboration"
                 ]
             },
             {
                 "title": "Technologies",
                 "items": [
-                    {
-                        "name": "REST API",
-                        "score": 4
-                    },
-                    {
-                        "name": "Web Socket",
-                        "score": 3.5
-                    },
-                    {
-                        "name": "Docker",
-                        "score": 2.5
-                    },
-                    {
-                        "name": "AWS",
-                        "score": 2
-                    }
+                    "Python", "Pandas", "JavaScript", "Node.js", "C#", "Go", "C++", "GPT", "Docker", "AWS (Athena,ECS, SQS, Lambda, S3, …)", "Terraform", "Salesforce Integration", "Gmail and Outlook Integration", "Dagster"
                 ]
             },
             {
                 "title": "Databases",
                 "items": [
-                    {
-                        "name": "SQL Server",
-                        "score": 3
-                    },
-                    {
-                        "name": "PostgresSQL",
-                        "score": 3
-                    },
-                    {
-                        "name": "MongoDB",
-                        "score": 2
-                    }
+                    "SQL", "PostgreSQL", "DynamoDB", "PrestoDB", "mongoDB"
                 ]
             },
             {
                 "title": "Development lifecycle",
                 "items": [
-                    {
-                        "name": "Visual Studio",
-                        "score": 4.5
-                    },
-                    {
-                        "name": "VS Code",
-                        "score": 4.5
-                    },
-                    {
-                        "name": "Git",
-                        "score": 4
-                    },
-                    {
-                        "name": "Octopus",
-                        "score": 3
-                    },
-                    {
-                        "name": "CI/CD",
-                        "score": 3.5
-                    }
+                    "VS Code", "Atlassian Suite", "Git", "Github", "Octopus", "CircleCI", "Shortcut"
                 ]
             }
         ]

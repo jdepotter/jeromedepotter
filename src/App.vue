@@ -30,7 +30,7 @@
     </v-app-bar>
     <v-layout>
       <v-card light class="rounded-lg">
-        <v-navigation-drawer id="p-navigation" fixed left height="470" width="220" :class="`blue-grey lighten-4`">
+        <v-navigation-drawer id="p-navigation" fixed left height="400" width="240" :class="`blue-grey lighten-4`">
           <v-list>
             <v-list-item>
               <v-list-item-avatar>
@@ -83,24 +83,24 @@
             </v-card-text>
             <About></About>
           </v-card>
+          <v-card id="p-skills" class="p-card rounded-lg" light elevation=2>
+            <v-card-text>
+              <h2 class="p-card-title" :class="`light-blue--text text--darken-3`">{{cards.skills}}</h2>
+            </v-card-text>
+            <Skills></Skills>
+          </v-card>
           <v-card id="p-resume" class="p-card rounded-lg" light elevation=2>
             <v-card-text>
               <h2 class="p-card-title" :class="`light-blue--text text--darken-3`">{{cards.experience}}</h2>
             </v-card-text>
             <Resume></Resume>
           </v-card>
-          <v-card id="p-projects" class="p-card rounded-lg" light elevation=2>
-            <v-card-text>
-              <h2 class="p-card-title" :class="`light-blue--text text--darken-3`">{{cards.projects}}</h2>
-            </v-card-text>
-            <Projects></Projects>
-          </v-card>
-          <v-card id="p-skills" class="p-card rounded-lg" light elevation=2>
-            <v-card-text>
-              <h2 class="p-card-title" :class="`light-blue--text text--darken-3`">{{cards.skills}}</h2>              
-            </v-card-text>
-            <Skills></Skills>
-          </v-card>
+          <!-- <v-card id="p-projects" class="p-card rounded-lg" light elevation=2> -->
+            <!-- <v-card-text> -->
+              <!-- <h2 class="p-card-title" :class="`light-blue--text text--darken-3`">{{cards.projects}}</h2> -->
+            <!-- </v-card-text> -->
+            <!-- <Projects></Projects> -->
+          <!-- </v-card> -->
         </v-container>
       </v-main>
     </v-layout>
@@ -125,7 +125,7 @@ export default {
     About,
     Projects,
   },
-  data: () => ({     
+  data: () => ({
   }),
   computed: {
     menu_items() {
@@ -140,7 +140,7 @@ export default {
     global() {
       return this.$store.getters.get_site_content.global;
     },
-    links_model() { 
+    links_model() {
       return [
       {
         icon: ["fab", "linkedin-in"],
